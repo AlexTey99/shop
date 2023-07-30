@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+
+    .show-container{
+        display: none;
+        flex-direction: column;
+        overflow-y: scroll;
+        position: absolute;
+        right: 30px;
+        top: 70px;
+        height: 70%;
+        width: auto;
+        background: #356169b3;
+
+        .producto-carrito{
+            display: flex;
+            color: white;
+            height: 75px;
+            width: 200px;
+            flex-direction: initial;
+            justify-content: center;
+            background: repeating-linear-gradient(45deg, black, transparent 100px);
+
+            .div-mover{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .clase-1{
+                width: 60px;
+                height: 60px;
+                margin: 2px;
+                margin-left: -10px;
+                margin-right: 5px;
+                border-radius: 5px;
+            }
+
+            .clase-2{
+                width: 100px;
+            }
+
+            .clase-3{
+                display: none;
+            }
+
+            .clase-5{
+                display: none;
+            }
+
+            .fas{
+                margin-top: 5px;
+                color: red;
+            }
+
+            .fas:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .show-container.collapse{
+        display: none !important;
+    }
+
+   
+
+    
+    h1{
+        margin-left: 45%;
+    }
+
+    .contianer{
+        display: flex;
+        width: 100%;
+        align-items: end;
+
+        .container-icons-price{
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+
+            .two-icons:hover{
+                cursor: pointer;
+            }
+        }
+    }
+   
+
+    .contianer-input{
+        display: flex;
+        width: 100%;
+
+        .fa-sharp{
+            position: absolute;
+            top: 100px;
+            left: 40px;
+        }
+    }
+
+    p{
+        margin-top: 2px;
+        margin-bottom: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .input{
+        width: 100%;
+        height: 40px;
+        padding: 10px 10px 5px 30px;
+        margin-bottom: 10px;
+    }
+
+    .img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .clothes-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        height: 100%;
+        width: 100%;
+        padding: 25px;
+        gap: 20px;
+        border-radius: 10px;
+        background: radial-gradient(black, transparent);
+    }
+
+    .elementDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+        padding: 5px;
+        font-size: 10px;
+        height: 200px;
+        width: 115px;
+        border-radius: 10px;
+        background: white;
+    }
+
+    .in-the-car{
+        display: flex;
+    }
+
+    button{
+        margin-top: 15px;
+        border: none;
+        width: 100%;
+        font-size: 11px;
+        height: 20px;
+        color: white;
+        background: #0000ffb5;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background: rgb(0 0 255 / 86%);
+    }
+
+
+}

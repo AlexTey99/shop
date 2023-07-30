@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fe59f0d15a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="addCar" class="show-container"></div>
+        <div class="contianer">
+            <h1>Shop</h1>
+            <div class="container-icons-price">
+                <i class="fa-sharp fa-regular fa-plus two-icons" onclick="highPrice()"></i>
+                <i class="fa-sharp fa-solid fa-minus two-icons" onclick="lowPrice()"></i>
+                <i id="trolley" class="fa-sharp fa-solid fa-cart-shopping two-icons" onclick="showContainer()"></i>
+            </div>
+        </div>
+
+
+        <div class="container-icons-price"></div>
+
+
+        <br>
+        <div class="contianer-input">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <input id="input" onkeydown="searchByName()" name="input" class="input" type="text" placeholder="Search">
+        </div>
+
+        <div id="clothes" class="clothes-container"></div>
+
+    </div>
+
+
+
+</body>
+
+</html>

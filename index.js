@@ -11,8 +11,17 @@ document.addEventListener('mouseup', function(e) {
 
 // Función para mostrar el div de los objetos seleccionados
 const showContainer = () => {
-  $("#addCar").removeClass("collapse");
-  document.getElementById('addCar').style.display = 'flex';
+
+  const divElement = document.getElementById('addCar');
+  const contieneElementos = divElement.children.length > 0;
+  
+  if (contieneElementos) {
+    $("#addCar").removeClass("collapse");
+    document.getElementById('addCar').style.display = 'flex';
+  } else {
+    console.log('El div está vacío.');
+  }
+  
 }
 
 // Variable para almacenar todos los productos

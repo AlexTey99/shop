@@ -141,7 +141,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 25px;
-  gap: 20px;
+  gap: 1rem;
   border-radius: 10px;
   align-items: center;
 }
@@ -151,7 +151,7 @@ body {
   flex-direction: column;
   justify-content: end;
   text-align: center;
-  padding: 10px;
+  padding: 1rem 0.5rem;
   font-size: 10px;
   height: 200px;
   width: 115px;
@@ -165,11 +165,11 @@ body {
 }
 
 .main-container button {
-  margin-top: 15px;
   border: none;
   width: 100%;
   font-size: 11px;
-  height: 20px;
+  padding: 5px;
+  border-radius: 3px;
   color: white;
   background: rgba(0, 0, 255, 0.7098039216);
 }

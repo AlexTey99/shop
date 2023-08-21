@@ -153,7 +153,6 @@ body {
   text-align: center;
   padding: 1rem 0.5rem;
   font-size: 10px;
-  height: 200px;
   width: 115px;
   border-radius: 5px;
   background: white;
@@ -165,6 +164,7 @@ body {
 }
 
 .main-container button {
+  margin-top: 15px;
   border: none;
   width: 100%;
   font-size: 11px;

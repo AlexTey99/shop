@@ -18,7 +18,21 @@ body {
   width: 100vw;
   padding: 30px;
 }
-
+.main-container .contador {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  right: 30px;
+  height: 15px;
+  width: 15px;
+  z-index: -1;
+  font-size: 10px;
+  color: white;
+  border-radius: 50%;
+  background: red;
+}
 .main-container .show-container {
   display: none;
   flex-direction: column;
@@ -30,7 +44,6 @@ body {
   width: auto;
   background: rgba(53, 97, 105, 0.7019607843);
 }
-
 .main-container .show-container .producto-carrito {
   display: flex;
   color: white;
@@ -40,13 +53,11 @@ body {
   justify-content: center;
   background: repeating-linear-gradient(45deg, black, transparent 100px);
 }
-
 .main-container .show-container .producto-carrito .div-mover {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .main-container .show-container .producto-carrito .clase-1 {
   width: 60px;
   height: 60px;
@@ -55,65 +66,52 @@ body {
   margin-right: 5px;
   border-radius: 5px;
 }
-
 .main-container .show-container .producto-carrito .clase-2 {
   width: 100px;
 }
-
 .main-container .show-container .producto-carrito .clase-3 {
   display: none;
 }
-
 .main-container .show-container .producto-carrito .clase-5 {
   display: none;
 }
-
 .main-container .show-container .producto-carrito .fas {
   margin-top: 5px;
   color: red;
 }
-
 .main-container .show-container .producto-carrito .fas:hover {
   cursor: pointer;
 }
-
 .main-container .show-container.collapse {
   display: none !important;
 }
-
 .main-container h1 {
   margin-left: 45%;
   color: hsl(240, 5%, 38%);
 }
-
 .main-container .contianer {
   display: flex;
   width: 100%;
   align-items: end;
 }
-
 .main-container .contianer .container-icons-price {
   margin-left: auto;
   display: flex;
   gap: 10px;
 }
-
 .main-container .contianer .container-icons-price .two-icons:hover {
   cursor: pointer;
 }
-
 .main-container .contianer-input {
   display: flex;
   width: 100%;
 }
-
 .main-container .contianer-input .fa-sharp {
   position: absolute;
   top: 100px;
   left: 40px;
   color: hsl(240, 5%, 38%);
 }
-
 .main-container p {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -121,7 +119,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .main-container .input {
   width: 100%;
   height: 40px;
@@ -130,50 +127,45 @@ body {
   border: none;
   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
-
 .main-container .img {
   height: 100px;
+  width: 100px;
 }
-
 .main-container .clothes-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   height: 100%;
   width: 100%;
   padding: 25px;
-  gap: 1rem;
+  gap: 20px;
   border-radius: 10px;
+  background: radial-gradient(black, transparent);
   align-items: center;
 }
-
 .main-container .elementDiv {
   display: flex;
   flex-direction: column;
   justify-content: end;
   text-align: center;
-  padding: 1rem 0.5rem;
+  padding: 5px;
   font-size: 10px;
+  height: 200px;
   width: 115px;
   border-radius: 5px;
   background: white;
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
 }
-
 .main-container .in-the-car {
   display: flex;
 }
-
 .main-container button {
   margin-top: 15px;
   border: none;
   width: 100%;
   font-size: 11px;
-  padding: 5px;
-  border-radius: 3px;
+  height: 20px;
   color: white;
   background: rgba(0, 0, 255, 0.7098039216);
 }
-
 .main-container button:hover {
   cursor: pointer;
   background: rgba(0, 0, 255, 0.86);

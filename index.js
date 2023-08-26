@@ -112,11 +112,16 @@ const lowPrice = () => {
 }
 
 
+let numberContador = 0;
+
+
 // Funcion para anadir los objetos al carrito
 const addProductToCart = (id) => {
   // Coje el div por el id
   const containerDiv = document.getElementById(id);
   const containerCar = document.getElementById('addCar');
+  const contador = document.getElementById('contador');
+
 
   let productoClonado = containerDiv.cloneNode(true);
 
@@ -152,6 +157,15 @@ const addProductToCart = (id) => {
     // Agregar evento de click al icono para eliminar el producto clonado
     deleteIcon.addEventListener('click', () => {
       productoClonado.remove();
+
+      // Disminuye el numero del contador al ser eliminado
+      numberContador--;
+      contador.textContent = numberContador;
+
+      if (numberContador == 0){
+        contador.style.display = 'none';
+      }
+
     });
 
   productoClonado.classList.add('producto-carrito');
@@ -159,6 +173,12 @@ const addProductToCart = (id) => {
   // Agregar el div movido al contenedor del carrito
   productoClonado.appendChild(divMover);
   containerCar.appendChild(productoClonado);
+
+
+  contador.style.display = 'flex';
+  numberContador = numberContador + 1;
+  contador.textContent = numberContador;
+
 };
 
 

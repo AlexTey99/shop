@@ -18,6 +18,22 @@ body{
     width: 100vw;
     padding: 30px;
 
+    .contador{
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 40px;
+        right: 30px;
+        height: 15px;
+        width: 15px;
+        z-index: -1;
+        font-size: 10px;
+        color: white;
+        border-radius: 50%;
+        background: red;
+    }
+
     .show-container{
         display: none;
         flex-direction: column;

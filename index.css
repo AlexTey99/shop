@@ -145,7 +145,7 @@ body {
   align-items: center;
   justify-items: center;
 }
-.main-container .elementDiv {
+.main-container .productDiv {
   display: flex;
   flex-direction: column;
   text-align: center;

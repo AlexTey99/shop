@@ -153,6 +153,10 @@ body{
         box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
     }
 
+    .input:focus{
+        outline: none;
+    }
+
     .img{
         height: 100px;
     }

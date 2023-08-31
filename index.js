@@ -75,7 +75,7 @@ function updateProducts(products) {
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
     
-    let productDiv = `<div id="${product.id}" class='productDiv'>
+    let productDiv = `<div id="${product.id}" class='productDiv div-container-product'>
                         <img class="img" src="${product.image}" />
                         <p>${product.title}</p>
                         <p>${product.category}</p>

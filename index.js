@@ -75,7 +75,7 @@ function updateProducts(products) {
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
     
-    let productDiv = `<div id="${product.id}" class='productDiv div-container-product'>
+    let productDiv = `<div id="${product.id}" class='productDiv'>
                         <img class="img" src="${product.image}" />
                         <p>${product.title}</p>
                         <p>${product.category}</p>
@@ -121,6 +121,14 @@ const addProductToCart = (id) => {
   const containerDiv = document.getElementById(id);
   const containerCar = document.getElementById('addCar');
   const contador = document.getElementById('contador');
+  
+  //const elementosAgregados = new Set();
+
+  if(containerCar.contains(containerDiv)){
+    // Crear un conjunto para realizar un seguimiento de los elementos agregados
+    return;
+    //elementosAgregados = containerDiv;
+  }
 
 
   let productoClonado = containerDiv.cloneNode(true);
@@ -149,24 +157,22 @@ const addProductToCart = (id) => {
     }
   });
 
-    // Agregar el icono de eliminar al divMover
-    const deleteIcon = document.createElement('i');
-    deleteIcon.classList.add('fas', 'fa-trash-alt', 'delete-icon');
-    divMover.appendChild(deleteIcon);
+  // Agregar el icono de eliminar al divMover
+  const deleteIcon = document.createElement('i');
+  deleteIcon.classList.add('fas', 'fa-trash-alt', 'delete-icon');
+  divMover.appendChild(deleteIcon);
   
-    // Agregar evento de click al icono para eliminar el producto clonado
-    deleteIcon.addEventListener('click', () => {
-      productoClonado.remove();
+  // Agregar evento de click al icono para eliminar el producto clonado
+  deleteIcon.addEventListener('click', () => {
+    productoClonado.remove();
 
-      // Disminuye el numero del contador al ser eliminado
-      numberContador--;
-      contador.textContent = numberContador;
-
-      if (numberContador == 0){
-        contador.style.display = 'none';
-      }
-
-    });
+    // Disminuye el numero del contador al ser eliminado
+    numberContador--;
+    contador.textContent = numberContador;
+    if (numberContador == 0){
+      contador.style.display = 'none';
+    }
+  });
 
   productoClonado.classList.add('producto-carrito');
 

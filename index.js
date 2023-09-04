@@ -121,13 +121,10 @@ const addProductToCart = (id) => {
   const containerDiv = document.getElementById(id);
   const containerCar = document.getElementById('addCar');
   const contador = document.getElementById('contador');
-  
-  //const elementosAgregados = new Set();
 
   if(containerCar.contains(containerDiv)){
-    // Crear un conjunto para realizar un seguimiento de los elementos agregados
+    console.log("No puede seleccionar el mismo producto.");
     return;
-    //elementosAgregados = containerDiv;
   }
 
 
@@ -172,6 +169,15 @@ const addProductToCart = (id) => {
     if (numberContador == 0){
       contador.style.display = 'none';
     }
+
+    // Si el contenedor del carito esta vacion se oculta
+    if (containerCar.innerHTML.trim() === "") {
+      containerCar.style.display = "none";
+      console.log("El div está vacío");
+    } else {
+        console.log("El div no está vacío");
+    }
+    
   });
 
   productoClonado.classList.add('producto-carrito');
